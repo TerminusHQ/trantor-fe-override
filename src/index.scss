@@ -1,0 +1,55 @@
+:root {
+  --webnest-nav-bg-color: var(--ant-primary-color); // 导航栏背景颜色
+  --webnest-nav-color: #ffffff; // 导航栏文字/图标颜色
+  --webnest-menu-icon-col-bg: #f5f5f5; // 侧边菜单图标栏背景颜色
+  --webnest-menu-col-bg: #ffffff; // 侧边菜单栏背景颜色
+  --webnest-menu-border-color: #ebedf0; // 侧边菜单border颜色
+  --webnest-menu-color: #515559; // 侧边一级菜单颜色;
+  --webnest-sub-menu-color: #515559; // 侧边子菜单颜色;
+  --webnest-menu-color-hover: var(--ant-primary-color); // 侧边菜单hover颜色;
+  --webnest-menu-color-selected: var(--ant-primary-color); // 侧边菜单选中颜色;
+  --webnest-menu-bg-selected: var(--ant-primary-2); // 侧边菜单选中背景色
+  --webnest-menu-icon-color: #8a9199; // 侧边菜单图标颜色
+  --webnest-menu-icon-color-selected: #ffffff; // 侧边菜单图标选中颜色
+  --webnest-menu-icon-bg-selected: var(
+    --ant-primary-color
+  ); // 侧边菜单图标选中颜色
+  --webnest-menu-opened-sign-color: var(
+    --ant-primary-color
+  ); // 侧边菜单打开后的标志颜色（竖杆）
+  --webnest-menu-header-color: #17181a; // 菜单标题颜色
+}
+
+.override-global-navigation-dashboard-entry {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0px 16px;
+  position: relative;
+  span {
+    margin-left: 8px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+    left: 0;
+  }
+}
+
+.pk-global-nav {
+  background: var(--webnest-nav-bg-color) !important;
+  .override-global-navigation-dashboard-entry {
+    color: var(--webnest-nav-color);
+    &::before {
+      background-color: var(--webnest-nav-color);
+    }
+  }
+  .nusicon {
+    color: var(--webnest-nav-color);
+  }
+}

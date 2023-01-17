@@ -1,0 +1,17 @@
+{
+  "name": "@terminus/webnest-theme-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transform": "../node_modules/.bin/nusi-theme-generator transform"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@terminus/nusi": "4.0.126",
+    "antd": "4.24.5",
+    "@terminus/t-workspace": "2.18.335"
+  }
+}

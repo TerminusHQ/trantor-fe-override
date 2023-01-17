@@ -1,0 +1,141 @@
+// -------- 配置变量覆盖 --------
+// --------- 在此修改任何你想要修改的样式 ----------------
+$primary: #ED6C3B;
+//$primary-hover: #0da44d;
+//$blue: #3498dc;
+//$green: #2ecc71;
+//$red: #f04844;
+//$yellow: #ffa847;
+// $primary: #0073ff;
+// $primary-color: #0073ff;
+// $primary-severe-hover: #0073ff;
+
+// -------- scss 文件覆盖变量在上方， 与 less 不一样 ----------------------------------------------------------
+// -------- 注意先后顺序，scss 文件修改的样式一定要位于以下两个文件的上方，否则覆盖失效 -----------------------
+
+// 导入 webnest.scss
+@import "@terminus/t-workspace/lib/styles/global.scss";
+@import "@terminus/t-workspace/lib/styles/tempadd.scss";
+
+// 导入 nusi.scss
+@import "~@terminus/nusi/dist/nusi.scss";
+
+// 浅色菜单，蓝色导航
+// primary: #0073FF
+// :root {
+//   --webnest-nav-bg-color: #0073FF; // 导航栏背景颜色
+//   --webnest-nav-color: #ffffff; // 导航栏文字/图标颜色
+//   --webnest-menu-icon-col-bg: #f5f5f5; // 侧边菜单图标栏背景颜色
+//   --webnest-menu-col-bg: #ffffff; // 侧边菜单栏背景颜色
+//   --webnest-menu-border-color: #ebedf0; // 侧边菜单border颜色
+//   --webnest-menu-color: #515559; // 侧边一级菜单颜色;
+//   --webnest-sub-menu-color: #515559; // 侧边子菜单颜色;
+//   --webnest-menu-color-hover: #0073FF; // 侧边菜单hover颜色;
+//   --webnest-menu-color-selected: #0073FF; // 侧边菜单选中颜色;
+//   --webnest-menu-bg-selected: rgba(0, 115, 255, 0.06);; // 侧边菜单选中背景色
+//   --webnest-menu-icon-color: #17181A; // 侧边菜单图标颜色
+//   --webnest-menu-icon-color-selected: #ffffff; // 侧边菜单图标选中颜色
+//   --webnest-menu-icon-bg-selected: #0073FF; // 侧边菜单图标选中颜色
+//   --webnest-menu-opened-sign-color: #0073FF; // 侧边菜单打开后的标志颜色（竖杆）
+// }
+
+// 浅色菜单，深色导航
+// primary: #0073FF
+// :root {
+//   --webnest-nav-bg-color: #3E4D65; // 导航栏背景颜色
+//   --webnest-nav-color: #ffffff; // 导航栏文字/图标颜色
+//   --webnest-menu-icon-col-bg: #f5f5f5; // 侧边菜单图标栏背景颜色
+//   --webnest-menu-col-bg: #ffffff; // 侧边菜单栏背景颜色
+//   --webnest-menu-border-color: #ebedf0; // 侧边菜单border颜色
+//   --webnest-menu-color: #515559; // 侧边一级菜单颜色;
+//   --webnest-sub-menu-color: #515559; // 侧边子菜单颜色;
+//   --webnest-menu-color-hover: #0073FF; // 侧边菜单hover颜色;
+//   --webnest-menu-color-selected: #0073FF; // 侧边菜单选中颜色;
+//   --webnest-menu-bg-selected: rgba(0, 115, 255, 0.06);; // 侧边菜单选中背景色
+//   --webnest-menu-icon-color: #17181A; // 侧边菜单图标颜色
+//   --webnest-menu-icon-color-selected: #ffffff; // 侧边菜单图标选中颜色
+//   --webnest-menu-icon-bg-selected: #0073FF; // 侧边菜单图标选中颜色
+//   --webnest-menu-opened-sign-color: #0073FF; // 侧边菜单打开后的标志颜色（竖杆）
+// }
+
+// 浅色菜单，彩色导航
+// primary: #4e66de
+// :root {
+//   --webnest-nav-bg-color: radial-gradient(
+//     50% 38500.01% at 66.04% 50%,
+//     #6ab2f4 0%,
+//     #5f51f8 100%
+//   ); // 导航栏背景颜色
+//   --webnest-nav-color: #ffffff; // 导航栏文字/图标颜色
+//   --webnest-menu-icon-col-bg: #f5f5f5; // 侧边菜单图标栏背景颜色
+//   --webnest-menu-col-bg: #ffffff; // 侧边菜单栏背景颜色
+//   --webnest-menu-border-color: #ebedf0; // 侧边菜单border颜色
+//   --webnest-menu-color: #515559; // 侧边一级菜单颜色;
+//   --webnest-sub-menu-color: #515559; // 侧边子菜单颜色;
+//   --webnest-menu-color-hover: #4e66de; // 侧边菜单hover颜色;
+//   --webnest-menu-color-selected: #4e66de; // 侧边菜单选中颜色;
+//   --webnest-menu-bg-selected: rgba(78, 102, 222, 0.06); // 侧边菜单选中背景色
+//   --webnest-menu-icon-color: #17181a; // 侧边菜单图标颜色
+//   --webnest-menu-icon-color-selected: #ffffff; // 侧边菜单图标选中颜色
+//   --webnest-menu-icon-bg-selected: #4e66de; // 侧边菜单图标选中颜色
+//   --webnest-menu-opened-sign-color: #4e66de; // 侧边菜单打开后的标志颜色（竖杆）
+// }
+
+// 深色菜单，蓝色系
+// $primary:  #0073ff
+// :root {
+//   --webnest-nav-bg-color: #ffffff; // 导航栏背景颜色
+//   --webnest-nav-color: #17181a; // 导航栏文字/图标颜色
+//   --webnest-menu-icon-col-bg: #1a2443; // 侧边菜单图标栏背景颜色
+//   --webnest-menu-col-bg: #2f3f6f; // 侧边菜单栏背景颜色
+//   --webnest-menu-border-color: rgba(255, 255, 255, 0.1); // 侧边菜单border颜色
+//   --webnest-menu-color: rgba(255, 255, 255, 0.8); // 侧边一级菜单颜色;
+//   --webnest-sub-menu-color: rgba(255, 255, 255, 0.8); // 侧边子菜单颜色;
+//   --webnest-menu-color-hover: #ffffff; // 侧边菜单hover颜色;
+//   --webnest-menu-color-selected: #ffffff; // 侧边菜单选中颜色;
+//   --webnest-menu-bg-selected: #0073ff; // 侧边菜单选中背景色
+//   --webnest-menu-icon-color: #ffffff; // 侧边菜单图标颜色
+//   --webnest-menu-icon-color-selected: #0073ff; // 侧边菜单图标选中颜色
+//   --webnest-menu-icon-bg-selected: #ffffff; // 侧边菜单图标选中颜色
+//   --webnest-menu-opened-sign-color: #0073ff; // 侧边菜单打开后的标志颜色（竖杆）
+//   --webnest-menu-header-color: #ffffff; // 菜单标题颜色
+// }
+
+// .pk-global-nav {
+//   box-shadow: 0px 4px 12px rgba(23, 24, 26, 0.16) !important;
+//   .pk-global-nav-avatar-item {
+//     border: 1.5px solid #ffffff;
+//     filter: drop-shadow(0px 4px 12px rgba(23, 24, 26, 0.16));
+//   }
+// }
+
+// 深色菜单，橙色系
+// primary: #ED6C3B
+// :root {
+//   --webnest-nav-bg-color: #ffffff; // 导航栏背景颜色
+//   --webnest-nav-color: #17181a; // 导航栏文字/图标颜色
+//   --webnest-menu-icon-col-bg: #2F2F2F; // 侧边菜单图标栏背景颜色
+//   --webnest-menu-col-bg: #202020; // 侧边菜单栏背景颜色
+//   --webnest-menu-border-color: rgba(255, 255, 255, 0.1); // 侧边菜单border颜色
+//   --webnest-menu-color: rgba(255, 255, 255, 0.8); // 侧边一级菜单颜色;
+//   --webnest-sub-menu-color: rgba(255, 255, 255, 0.8); // 侧边子菜单颜色;
+//   --webnest-menu-color-hover: #ffffff; // 侧边菜单hover颜色;
+//   --webnest-menu-color-selected: #ffffff; // 侧边菜单选中颜色;
+//   --webnest-menu-bg-selected: #ED6C3B; // 侧边菜单选中背景色
+//   --webnest-menu-icon-color: #ffffff; // 侧边菜单图标颜色
+//   --webnest-menu-icon-color-selected: #ED6C3B; // 侧边菜单图标选中颜色
+//   --webnest-menu-icon-bg-selected: #ffffff; // 侧边菜单图标选中颜色
+//   --webnest-menu-opened-sign-color: #ED6C3B; // 侧边菜单打开后的标志颜色（竖杆）
+//   --webnest-menu-header-color: #ffffff; // 菜单标题颜色
+// }
+
+// .pk-global-nav {
+//   box-shadow: 0px 4px 12px rgba(23, 24, 26, 0.16) !important;
+//   .pk-global-nav-avatar-item {
+//     border: 1.5px solid #ffffff;
+//     filter: drop-shadow(0px 4px 12px rgba(23, 24, 26, 0.16));
+//   }
+// }
+
+
+@import './extra.scss'

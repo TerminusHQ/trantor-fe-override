@@ -1,0 +1,13 @@
+{
+  "extends": "@terminus/t-nest/base.tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": ["DOM", "ESNext"],
+    "types": ["node"],
+    "resolveJsonModule": true
+  },
+  "include": ["./src/*"]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "custom-webnest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "t-nest serve",
+    "build": "t-nest build",
+    "upload": "node ./oss-helper/index.js",
+    "uploadOverride": "node ./oss-helper/index.js --path ./dist --type override",
+    "uploadTheme": "node ./oss-helper/index.js --path ./webnest-theme/dist --type theme"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@terminus/nusi": "4.0.126",
+    "@terminus/nusi-components": "1.18.271",
+    "@terminus/nusi-engine": "1.18.271",
+    "@terminus/nusi-theme-generator": "2.0.1-beta.4",
+    "@terminus/t-nest": "2.18.346",
+    "@terminus/t-workspace": "2.18.346",
+    "ali-oss": "^6.0.1",
+    "commander": "^9.5.0",
+    "single-line-log": "^1.1.2"
+  },
+  "dependencies": {
+    "antd": "4.24.5"
+  }
+}
